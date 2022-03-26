@@ -1,9 +1,8 @@
-const zhopa = require('./testitFormatter.js')
-const zhopa_1 = require('testit-adapter-cucumber')
-const zhopa_2 = require('testit-api-client')
+const YA_NE_PONIMAU_KUDA_ETO_PIHAT = require('./testitFormatter.js')
+const YA_NE_PONIMAU_KUDA_ETO_PIHAT_1 = require('testit-adapter-cucumber')
+const YA_NE_PONIMAU_KUDA_ETO_PIHAT_2 = require('testit-api-client')
 
 exports.config = {
-    default: ['-f ./testitFormatter.js'],
     //
     // ====================
     // Runner Configuration
@@ -115,7 +114,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver', [zhopa_1] ,[zhopa_2] ],
+    services: ['chromedriver', [YA_NE_PONIMAU_KUDA_ETO_PIHAT_1] ,[YA_NE_PONIMAU_KUDA_ETO_PIHAT_2] ],
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
